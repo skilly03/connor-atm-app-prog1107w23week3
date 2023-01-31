@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include "helpers.h"
 #include <stdbool.h>
@@ -11,11 +12,11 @@ int main()
 
     char isRunning = 'y';
 
-    while(isRunning != 'n' || isRunning != 'N'){
+    while(isRunning != 'n' && isRunning != 'N'){
         //How to ask for the amount of money to dispense
         int money = get_int("How much money would withdraw?\n");
-
-        int hundreds = 0, fifties =0, twenties= 0, tens =0, fives= 0;
+        int bills {}= 100, 50, 20, 10
+       int hundreds = 0, fifties =0, twenties= 0, tens =0, fives= 0;
 
         //bool isDispensable;
         // if(money % 5 == 0){
@@ -29,9 +30,13 @@ int main()
         bool isEnough = money >= 5 ? true : false;
 
         if(isEnough && isDispensable){
-
+        for(int i = 0; i < array length; i++)[
+            amount_of_bills(1) = amount_left_to_dispense/bills (i);
+            amount_left_to_dispense = amount_left_to_dispense %
+            remainder = money % bills(i)
+        ]
             //For 150, money will equal 1
-            hundreds = money / 100;
+            hundreds = money /bills{0}
 
             int remainder= 0;
             remainder = money % 100; 
@@ -52,7 +57,7 @@ int main()
 
             remainder = remainder % 5;
             printf("I will dispense:\n");
-            printf("%dx $100 bill(s)\n", hundreds);
+            printf("%dx $100 bill(s)\n", hundreds); 
             printf("%dx $50 bill(s)\n", fifties);
             printf("%dx $20 bill(s)\n", twenties);
             printf("%dx $10 bill(s)\n", tens);

@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include "helpers.h"
+
+
+    int main(){
+        string name = get_string("what is your name");
+        printf("the second letter of your name is %c\n"), name(1);
+        printf("the first letter of your name is %c\n"), name(0);
+        int letterint = (int)name(0);
+        char str[]= "hello world";
+    
+    }
